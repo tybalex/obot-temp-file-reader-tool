@@ -296,7 +296,7 @@ async def main():
         print("Warning: File is empty, skipping summarization")
         return
 
-    output_file = os.getenv("OUTPUT_FILE", "NONE")
+    output_file = os.getenv("OUTPUT_FILE", "")
 
     try:
         from openai import OpenAI

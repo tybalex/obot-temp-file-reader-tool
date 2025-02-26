@@ -1,9 +1,9 @@
 ---
 Name: Advanced File Summarizer
-Description: This tool summarizes the input file in the workspace, returns a text summary of the file content, Print to the console by default or write to a file in the workspace.
+Description: This tool summarizes the input file in the workspace, returns a text summary of the file content, write to a file in the workspace by default, or print to the console. If write to a workspace file, please kindly remind the user that the summary file is generated in the workspace.
 Credential: sys.model.provider.credential
 Params: input_file: (Required) Name of the file in the workspace to summarize. Supported formats: [.md", ".txt", ".markdown", ".text", ".mdx", ".mdtxt", ".mdtxtx", ".docx", ".pdf", ".pptx"]. For any other file types, simply say it's not supported yet.
-Params: output_file: (Optional) Name of the file to save the summary, default to NONE. To print to the console, set this to "NONE".  Set this to empty string, the tool will automaically generate a file name based on the input file name.
+Params: output_file: (Optional) Name of the file to save the summary, default to empty string. To print to the console, set this to "NONE".  Set this to empty string, the tool will automaically generate a file name based on the input file name.
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/summarize.py
 
