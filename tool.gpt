@@ -1,3 +1,4 @@
+---
 Name: Advanced File Summarizer
 Description: This tool summarizes the input file in the workspace, returns a text summary of the file content, either print to the console or write to a file in the workspace or both.
 Credential: sys.model.provider.credential
@@ -6,9 +7,6 @@ Params: output_file: (Optional) Name of the file to save the summary, default to
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/summarize.py
 
----
-!metadata:*:category
-Utilities
 
 ---
 !metadata:*:icon
